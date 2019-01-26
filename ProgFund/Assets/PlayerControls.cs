@@ -31,7 +31,11 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Jump();
+        if (Input.GetButtonDown("Jump"))
+        {
+            Jump();
+        }
+        //Jump();
         Rotate();
         if (Input.GetKeyDown(KeyCode.E) && positionCam < 4)
         {
@@ -43,13 +47,21 @@ public class PlayerControls : MonoBehaviour
             positionCam --;
         }
 
-        if (positionCam == 1)
+        //if (positionCam == 1)
+        //{
+        //    cam.transform.position = pos1.transform.position;
+        //}
+        //if (positionCam == 2)
+        //{
+        //    cam.transform.position = pos2.transform.position;
+        //}
+        if (Input.GetKey(KeyCode.P))
         {
-            cam.transform.position = pos1.transform.position;
+            gameObject.GetComponent<c_LightBehaviour>().l_Radius += Time.deltaTime;
         }
-        if (positionCam == 2)
+        if (Input.GetKey(KeyCode.O))
         {
-            cam.transform.position = pos2.transform.position;
+            gameObject.GetComponent<c_LightBehaviour>().l_Radius -= Time.deltaTime;
         }
     }
 
@@ -73,6 +85,7 @@ public class PlayerControls : MonoBehaviour
 
     void Jump()
     {
+        //
         if (Input.GetButtonDown("Jump"))
         {
             rb.AddForce(jumpForce * Vector3.up, ForceMode.Impulse);
