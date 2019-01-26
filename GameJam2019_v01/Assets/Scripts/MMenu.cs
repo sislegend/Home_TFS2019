@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MMenu : MonoBehaviour {
-
+    float angle;
     public void Load()
     {
         // Input Fade + Sound
@@ -20,7 +20,9 @@ public class MMenu : MonoBehaviour {
     }
     public  void Quit()
     {
+        
         // Check GameState
         Application.Quit();
+        Debug.Log("QUITTING");
     }
 }

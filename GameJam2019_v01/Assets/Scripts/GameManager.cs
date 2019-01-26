@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour {
 
     //public CMovement ThePlayer;
 
-    public GameObject PauseUI;
+    public GameObject[] PauseUI;
 
     private static GameManager Instance;
 
@@ -62,13 +62,15 @@ public class GameManager : MonoBehaviour {
 
     void Play()
     {
-        PauseUI.SetActive(false);
+        PauseUI[1].SetActive(false);
+        PauseUI[0].SetActive(false);
         Time.timeScale = 1;
     }
 
     void Pause()
     {
-        PauseUI.SetActive(true);
+        PauseUI[1].SetActive(true);
+        PauseUI[0].SetActive(true);
         Time.timeScale = 0;
     }
 
