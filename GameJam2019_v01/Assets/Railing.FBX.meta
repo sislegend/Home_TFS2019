@@ -1,16 +1,14 @@
 fileFormatVersion: 2
-guid: e472063cb9e354541a3bce66d36fb08c
+guid: 9198e600d96bb254f8a04373c3f56098
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: No Name
-    2100002: 'Material #36'
-    2100004: 'Material #37'
+    2100000: 01 - Default
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Bedside Table Close
+    4300000: Railing
   externalObjects: {}
   materials:
     importMaterials: 1
