@@ -21,10 +21,10 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientEquatorColor: {r: 0.066037714, g: 0.012771443, b: 0.012771443, a: 1}
+  m_AmbientGroundColor: {r: 0.018689923, g: 0.024938744, b: 0.18867922, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 3
+  m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -546,19 +546,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1dc10581c49e65f4f992f32c6092ab2b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.23778124
+      value: 0.015055329
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1dc10581c49e65f4f992f32c6092ab2b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6659282
+      value: 0.7069466
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1dc10581c49e65f4f992f32c6092ab2b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.6659279
+      value: 0.70694643
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1dc10581c49e65f4f992f32c6092ab2b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.23778109
+      value: -0.015055567
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1dc10581c49e65f4f992f32c6092ab2b, type: 3}
       propertyPath: m_RootOrder
@@ -582,7 +582,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1dc10581c49e65f4f992f32c6092ab2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 190
+      value: 231.74
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1dc10581c49e65f4f992f32c6092ab2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1030,7 +1030,12 @@ Prefab:
       propertyPath: m_Name
       value: lamps
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1477696693483054, guid: d2776cda21ebe8143a1050e3f09c1e55, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114008693977334902, guid: d2776cda21ebe8143a1050e3f09c1e55, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d2776cda21ebe8143a1050e3f09c1e55, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &626311753
@@ -1274,7 +1279,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 62f722f82a51f004a8be950e9c0c08c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.23899984
+      value: -6.13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62f722f82a51f004a8be950e9c0c08c8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1282,7 +1287,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62f722f82a51f004a8be950e9c0c08c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.078
+      value: -1.39
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62f722f82a51f004a8be950e9c0c08c8, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1419,7 +1424,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 62f722f82a51f004a8be950e9c0c08c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.74
+      value: -7.109
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62f722f82a51f004a8be950e9c0c08c8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1427,7 +1432,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62f722f82a51f004a8be950e9c0c08c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.17
+      value: -2.298
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62f722f82a51f004a8be950e9c0c08c8, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2138,7 +2143,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 62f722f82a51f004a8be950e9c0c08c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.57599974
+      value: -5.793
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62f722f82a51f004a8be950e9c0c08c8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2146,7 +2151,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62f722f82a51f004a8be950e9c0c08c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.3050003
+      value: -2.1629999
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62f722f82a51f004a8be950e9c0c08c8, type: 3}
       propertyPath: m_LocalRotation.x
