@@ -6,23 +6,28 @@ using UnityEngine;
 public class c_LightBehaviour : MonoBehaviour {
 
  
-    private float l_Radius;
+    public float l_Radius;
     Light p_Candle;
+    private float l_StartRadius;
 
     void Start()
     {
+     
         p_Candle = GetComponent<Light>();
-        l_Radius = p_Candle.range;
+        l_Radius = p_Candle.spotAngle;
+        l_StartRadius = l_Radius;
+        //Debug.Log(l_Radius + "temp");
     }
 
     void Update()
     {
-        p_Candle.range = l_Radius;
+        p_Candle.spotAngle = l_Radius;
     }
 
-    public float L_Radius()
+    public float L_StartRadius()
     {
-        return l_Radius;
+        //Debug.Log(l_StartRadius +"tweet");
+        return l_StartRadius;
     }
 
     public void L_Radius(float change)
