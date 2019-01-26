@@ -46,8 +46,7 @@ public class c_StaticLightBehaviour : MonoBehaviour {
     {
         if(c.gameObject.tag == "Player")
         {
-            lightON = true;
-            
+            lightON = true;  
         }
     }
 }

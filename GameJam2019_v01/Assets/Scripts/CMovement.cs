@@ -10,7 +10,6 @@ public class CMovement : MonoBehaviour {
     float PSpeed = 10.0f;
     float p_speedTMP;
 
-    public GameObject light;
 	// Use this for initialization
 	void Start () {
 		
