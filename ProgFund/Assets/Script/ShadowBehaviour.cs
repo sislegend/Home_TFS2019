@@ -14,7 +14,7 @@ public class ShadowBehaviour : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		transform.LookAt( )
+        transform.LookAt(Target.transform);
 	}
 
 
