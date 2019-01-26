@@ -30,7 +30,5 @@ public class CMovement : MonoBehaviour {
 
         var v3 = new Vector3(0, Input.GetAxis("Horizontal"), 0);
         transform.Rotate(v3 * 50 * Time.deltaTime);
-
-        //transform.Translate(Vector3.right * Time.deltaTime * Input.GetAxis("Horizontal") * PSpeed);
     }
 }
