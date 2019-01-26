@@ -50,7 +50,6 @@ public class PlayerControls : MonoBehaviour
         if (positionCam == 2)
         {
             cam.transform.position = pos2.transform.position;
-            cam.transform.
         }
     }
 
