@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Make positionCam = 0, in inspector to use follow camera
+//Make positionCam = 1, in inspector to use flip camera
 public class PlayerControls : MonoBehaviour
 {
 
@@ -50,7 +51,7 @@ public class PlayerControls : MonoBehaviour
         if (positionCam == 2)
         {
             cam.transform.position = pos2.transform.position;
-            cam.transform.
+            //cam.transform.
         }
     }
 
