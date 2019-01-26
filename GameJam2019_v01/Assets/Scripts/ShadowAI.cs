@@ -17,7 +17,7 @@ public class ShadowAI : MonoBehaviour
     void Update()
     {
 
-        transform.Rotate(transform.position,Mathf.Clamp(0, 15, 45)); 
+        transform.Rotate(transform.position, Mathf.Clamp(0, 15, 45)); 
 
     }
 }

@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour {
     {
         PauseUI[1].SetActive(false);
         PauseUI[0].SetActive(false);
+       
         Time.timeScale = 1;
     }
 
@@ -71,6 +72,7 @@ public class GameManager : MonoBehaviour {
     {
         PauseUI[1].SetActive(true);
         PauseUI[0].SetActive(true);
+        PauseUI[2].SetActive(true);
         Time.timeScale = 0;
     }
 
