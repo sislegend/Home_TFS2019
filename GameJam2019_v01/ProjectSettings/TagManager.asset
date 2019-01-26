@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Shadow
   - flicker
+  - Candle
+  - Actual Shadow
   layers:
   - Default
   - TransparentFX

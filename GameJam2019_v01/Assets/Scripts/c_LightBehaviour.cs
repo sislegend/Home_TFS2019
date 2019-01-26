@@ -13,6 +13,8 @@ public class c_LightBehaviour : MonoBehaviour {
     public GameObject[] shadow;
     public RaycastHit shadowRay;
 
+    
+
     public int timesCoroutineCalled;
 
     void Start()
@@ -32,6 +34,7 @@ public class c_LightBehaviour : MonoBehaviour {
         if (radiusDecreasing)
         {
             l_Radius -= Time.deltaTime;
+            GameObject.FindGameObjectWithTag("Actual Shadow").transform.localScale += new Vector3(.5f, -l_Radius, 0);
         }
         if (!radiusDecreasing)
         {
@@ -43,7 +46,8 @@ public class c_LightBehaviour : MonoBehaviour {
         if(l_Radius <= 0)
         {
             p_Candle.intensity = 0;
-            GameObject.FindGameObjectWithTag("flicker").SetActive(false); 
+            GameObject.FindGameObjectWithTag("flicker").SetActive(false);
+           
         }
     }
     private void OnTriggerEnter(Collider c)

@@ -715,6 +715,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &433984920 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 1dc10581c49e65f4f992f32c6092ab2b, type: 3}
+  m_PrefabInternal: {fileID: 341439154}
+--- !u!114 &433984921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433984916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a2a9c4f5d64c8499c80b96f21d7eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 1479688110}
+  shadow: {fileID: 1391742072679178, guid: 504f6dec7cf5c034689e5fe986c9b35d, type: 2}
+  anim: {fileID: 433984918}
 --- !u!54 &433984922
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1204,6 +1222,10 @@ Prefab:
     - target: {fileID: 4195946442677446, guid: 7d1b1323e7b9c4a48b68351d583c3381, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933781605104266, guid: 7d1b1323e7b9c4a48b68351d583c3381, type: 2}
+      propertyPath: m_TagString
+      value: Candle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d1b1323e7b9c4a48b68351d583c3381, type: 2}
@@ -2193,6 +2215,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.026981363, y: 0.02396512, z: 0.034047704}
   m_Center: {x: -6.237887e-10, y: 0.0026529373, z: 0}
+--- !u!1 &1479688109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1479688110}
+  m_Layer: 0
+  m_Name: ShadowSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1479688110
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1479688109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.23, y: 0, z: -2.47}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 433984920}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1530157783
 Prefab:
   m_ObjectHideFlags: 0
