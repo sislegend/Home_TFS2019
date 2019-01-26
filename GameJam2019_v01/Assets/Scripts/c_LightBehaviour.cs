@@ -12,7 +12,8 @@ public class c_LightBehaviour : MonoBehaviour {
     Light p_Candle;
     public GameObject[] shadow;
     public RaycastHit shadowRay;
-
+    public GameObject tryAgain;
+    public float p_Lives = 3;
     
 
     public int timesCoroutineCalled;
@@ -23,7 +24,7 @@ public class c_LightBehaviour : MonoBehaviour {
         l_Intensity = p_Candle.spotAngle;
         l_Radius = p_Candle.range;
         radiusDecreasing = false;
-        timesCoroutineCalled = 0;
+        tryAgain.SetActive(false);
     }
 
     void Update()
@@ -31,9 +32,11 @@ public class c_LightBehaviour : MonoBehaviour {
         p_Candle.range = l_Radius;
         p_Candle.spotAngle = l_Intensity;
 
+       
+
         if (radiusDecreasing)
         {
-            l_Radius -= Time.deltaTime;
+            l_Radius -= 3.5f * Time.deltaTime;
            
         }
         if (!radiusDecreasing)
@@ -44,12 +47,15 @@ public class c_LightBehaviour : MonoBehaviour {
             }
         }
         if(l_Radius <= 0)
-        {
+        {  
             p_Candle.intensity = 0;
             GameObject.FindGameObjectWithTag("flicker").SetActive(false);
+            tryAgain.SetActive(true);
            
         }
     }
+
+
     private void OnTriggerEnter(Collider c)
     {
         if (c.gameObject.tag == "Shadow")

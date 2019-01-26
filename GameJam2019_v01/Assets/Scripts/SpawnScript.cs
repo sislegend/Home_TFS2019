@@ -6,7 +6,7 @@ public class SpawnScript : MonoBehaviour {
 
     public Transform spawnPoint;
     public GameObject shadow;
-
+    
     
 
 	// Use this for initialization
@@ -36,11 +36,7 @@ public class SpawnScript : MonoBehaviour {
         }
     }
     public void SpawnShadow()
-    {
-       
+    {  
         Instantiate(shadow, spawnPoint.transform.position, Quaternion.identity);
-        enemy = GameObject.FindGameObjectsWithTag("Actual Shadow");
-
-        
     }
 }
