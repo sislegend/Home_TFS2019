@@ -1,85 +1,25 @@
 fileFormatVersion: 2
-guid: de63124a7f0522e4e949e56cd2ee8d6d
+guid: 13319270af18b234e858059f9537ad91
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: AlarmClock
-    100002: book1
-    100004: book2
-    100006: Book3
-    100008: Glass
-    100010: Lamp
-    100012: Lantern All Side
-    100014: Lantern One Side
-    100016: //RootNode
-    100018: Lantern three sides
-    100020: Mirror
-    100022: Plane001
-    100024: RockingHorse
-    100026: WashBowl
-    400000: AlarmClock
-    400002: book1
-    400004: book2
-    400006: Book3
-    400008: Glass
-    400010: Lamp
-    400012: Lantern All Side
-    400014: Lantern One Side
-    400016: //RootNode
-    400018: Lantern three sides
-    400020: Mirror
-    400022: Plane001
-    400024: RockingHorse
-    400026: WashBowl
-    2100000: 'Material #2'
-    2100002: 'Material #37'
-    2100004: 'Material #36'
+    100000: Box001
+    100002: //RootNode
+    100004: Plane001
+    400000: Box001
+    400002: //RootNode
+    400004: Plane001
+    2100000: 'Material #46'
+    2100002: 'Material #40'
+    2100004: 'Material #38'
     2100006: 'Material #39'
-    2100008: 'Material #38'
-    2100010: No Name
-    2300000: AlarmClock
-    2300002: book1
-    2300004: book2
-    2300006: Book3
-    2300008: Glass
-    2300010: Lamp
-    2300012: Lantern All Side
-    2300014: Lantern One Side
-    2300016: Lantern three sides
-    2300018: Mirror
-    2300020: Plane001
-    2300022: RockingHorse
-    2300024: WashBowl
-    2300026: //RootNode
-    3300000: AlarmClock
-    3300002: book1
-    3300004: book2
-    3300006: Book3
-    3300008: Glass
-    3300010: Lamp
-    3300012: Lantern All Side
-    3300014: Lantern One Side
-    3300016: Lantern three sides
-    3300018: Mirror
-    3300020: Plane001
-    3300022: RockingHorse
-    3300024: WashBowl
-    3300026: //RootNode
+    2100008: 'Material #80'
+    2300000: Box001
+    2300002: Plane001
+    3300000: Box001
+    3300002: Plane001
     4300000: Plane001
-    4300002: Lantern All Side
-    4300004: Lantern One Side
-    4300006: Lantern three sides
-    4300008: Glass
-    4300010: AlarmClock
-    4300012: Lamp
-    4300014: WashBowl
-    4300016: book2
-    4300018: book1
-    4300020: Book3
-    4300022: Mirror
-    4300024: RockingHorse
-    7400000: Take 001
-    9500000: //RootNode
+    4300002: Box001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -155,7 +95,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
