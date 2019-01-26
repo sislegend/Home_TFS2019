@@ -46,11 +46,22 @@ public class PlayerControls : MonoBehaviour
         if (positionCam == 1)
         {
             cam.transform.position = pos1.transform.position;
+            cam.transform.rotation = Quaternion.AngleAxis(-180, Vector3.up);
         }
         if (positionCam == 2)
         {
             cam.transform.position = pos2.transform.position;
-            cam.transform.
+            cam.transform.rotation = Quaternion.AngleAxis(-90, Vector3.up);
+        }
+        if (positionCam == 3)
+        {
+            cam.transform.position = pos3.transform.position;
+            cam.transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
+        }
+        if (positionCam == 4)
+        {
+            cam.transform.position = pos4.transform.position;
+            cam.transform.rotation = Quaternion.AngleAxis(90, Vector3.up);
         }
     }
 
