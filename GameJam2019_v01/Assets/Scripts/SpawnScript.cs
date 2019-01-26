@@ -6,12 +6,13 @@ public class SpawnScript : MonoBehaviour {
 
     public Transform spawnPoint;
     public GameObject shadow;
-    
-    
+
+    private int shadowNum = 0;
 
 	// Use this for initialization
 	void Start () {
         gameObject.GetComponent<Animator>().Play("idle");
+        shadow.SetActive(true);
 	}
 	
 	// Update is called once per frame
@@ -23,8 +24,12 @@ public class SpawnScript : MonoBehaviour {
     {
         if(c.gameObject.tag == "Candle")
         {
-            SpawnShadow();
-            gameObject.GetComponent<Animator>().Play("rockingHorse");
+            if (shadowNum == 0)
+            {
+                SpawnShadow();
+                gameObject.GetComponent<Animator>().Play("rockingHorse");
+                shadowNum++;
+            }
         }
     }
 
@@ -32,11 +37,11 @@ public class SpawnScript : MonoBehaviour {
     {
         if (c.gameObject.tag == "Candle")
         {
-            gameObject.GetComponent<Animator>().Play("idle");
+           // gameObject.GetComponent<Animator>().Play("idle");
         }
     }
     public void SpawnShadow()
-    {  
+    {
         Instantiate(shadow, spawnPoint.transform.position, Quaternion.identity);
     }
 }

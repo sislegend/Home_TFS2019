@@ -1,16 +1,19 @@
 fileFormatVersion: 2
 guid: b2d2ec2cebad4694ebec18e2caf79a4f
-timeCreated: 1548488958
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
     2100000: No Name
+    2100002: 'Material #35'
+    2100004: 'Material #37'
+    2100006: 'Material #38'
+    2100008: 'Material #36'
     2300000: //RootNode
     3300000: //RootNode
     4300000: Bed
+    4300002: Bedpost
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -31,6 +34,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

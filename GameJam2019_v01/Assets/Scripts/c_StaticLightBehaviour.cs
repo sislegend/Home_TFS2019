@@ -29,6 +29,7 @@ public class c_StaticLightBehaviour : MonoBehaviour {
             p_Candle.range -=Time.deltaTime;
             time += Time.deltaTime;
             p_Candle.intensity = 3.8f;
+            GameObject.FindGameObjectWithTag("Actual Shadow").SetActive(false);
         }
        
         if(time >= 15)
@@ -38,6 +39,7 @@ public class c_StaticLightBehaviour : MonoBehaviour {
             p_Candle.intensity = 0;
             time = 0;
             lightON = false;
+            GameObject.FindGameObjectWithTag("Actual Shadow").SetActive(true);
         }
     }
 
@@ -46,8 +48,7 @@ public class c_StaticLightBehaviour : MonoBehaviour {
     {
         if(c.gameObject.tag == "Player")
         {
-            lightON = true;
-            
+            lightON = true;  
         }
     }
 }

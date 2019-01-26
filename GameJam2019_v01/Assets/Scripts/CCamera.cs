@@ -6,6 +6,7 @@ public class CCamera : MonoBehaviour {
 
     public Transform ThePlayer;
     public Vector3 OffSet;
+    Vector3 NewPosition;
 
     // Use this for initialization
     void Start()
@@ -18,7 +19,7 @@ public class CCamera : MonoBehaviour {
     void Update()
     {
 
-        Vector3 NewPosition = ThePlayer.transform.position;
+        NewPosition = ThePlayer.transform.position;
 
         NewPosition += OffSet.x * ThePlayer.right;
         NewPosition += OffSet.y * ThePlayer.up;

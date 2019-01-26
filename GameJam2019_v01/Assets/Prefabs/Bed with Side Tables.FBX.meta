@@ -1,16 +1,30 @@
 fileFormatVersion: 2
-guid: e472063cb9e354541a3bce66d36fb08c
+guid: 4b96803a29647f045b08122f40cbc549
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Bedpost
+    100004: Bedside Table
+    100006: Bedside Table Close
     400000: //RootNode
-    2100000: No Name
-    2100002: 'Material #36'
-    2100004: 'Material #37'
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Bedside Table Close
+    400002: Bedpost
+    400004: Bedside Table
+    400006: Bedside Table Close
+    2100000: 'Material #35'
+    2100002: 'Material #37'
+    2100004: 'Material #38'
+    2100006: 'Material #36'
+    2100008: 'Material #39'
+    2300000: Bedpost
+    2300002: Bedside Table
+    2300004: Bedside Table Close
+    3300000: Bedpost
+    3300002: Bedside Table
+    3300004: Bedside Table Close
+    4300000: Bedpost
+    4300002: Bedside Table
+    4300004: Bedside Table Close
   externalObjects: {}
   materials:
     importMaterials: 1

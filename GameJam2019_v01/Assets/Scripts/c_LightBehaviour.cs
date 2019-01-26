@@ -58,7 +58,7 @@ public class c_LightBehaviour : MonoBehaviour {
 
     private void OnTriggerEnter(Collider c)
     {
-        if (c.gameObject.tag == "Shadow")
+        if (c.gameObject.tag == "Actual Shadow")
         {
             radiusDecreasing = true;
         }
@@ -66,9 +66,9 @@ public class c_LightBehaviour : MonoBehaviour {
 
     private void OnTriggerExit(Collider c)
     {
-        if (c.gameObject.tag == "Shadow")
+        if (c.gameObject.tag == "Actual Shadow")
         {
-            GameObject.FindGameObjectWithTag("Actual Shadow").transform.localScale += new Vector3(.5f, -l_Radius, 0);
+            GameObject.FindGameObjectWithTag("Actual Shadow").transform.localScale += new Vector3(.5f, 0, l_Radius * Time.deltaTime);
             radiusDecreasing = false;
         }
     }
