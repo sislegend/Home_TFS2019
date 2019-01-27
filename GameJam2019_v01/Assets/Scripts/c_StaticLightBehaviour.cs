@@ -1,18 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class c_StaticLightBehaviour : MonoBehaviour {
 
     public float time = 30;
     public float l_Radius;
     public bool lightON;
+   
     Light p_Candle;
     public GameObject pulse;
     public GameObject pulse2;
     public GameObject[] lightSources;
     public GameObject[] shadows;
     public bool levelEnd;
+    public GameObject final_Light;
+    private float timer;
+    public GameObject Light;
 
     void Start()
     {
@@ -21,17 +26,26 @@ public class c_StaticLightBehaviour : MonoBehaviour {
         p_Candle.range = 50;
         p_Candle.intensity = 0;
         levelEnd = false;
+        timer = 0;
+
+        // Add statement for SceneManager
         if(shadows[2])
         {
             shadows[2].SetActive(false);
+            
+        }
+        if (shadows[3])
+        {
             shadows[3].SetActive(false);
         }
-
+        
     }
 
     void Update()
     {
-        if(lightON == true)
+        //Debug.Log(Light.gameObject.GetComponent<c_LightBehaviour>().hasTeddy);
+
+        if (lightON == true)
         {
             pulse.SetActive(true);
             pulse2.SetActive(true);
@@ -42,12 +56,13 @@ public class c_StaticLightBehaviour : MonoBehaviour {
                      
         if (lightSources.Length == 1)
         {
-            if (lightSources[0].GetComponent<c_StaticLightBehaviour>().lightON == true)
+            if (lightSources[0].GetComponent<c_StaticLightBehaviour>().lightON == true )
             {
-                
                 GameObject.FindGameObjectWithTag("Actual Shadow").SetActive(false);
                 levelEnd = true;
+                final_Light.SetActive(true);
             }
+            
         } 
         else if (lightSources.Length == 2)
         {
@@ -95,9 +110,15 @@ public class c_StaticLightBehaviour : MonoBehaviour {
 
     private void OnTriggerEnter(Collider c)
     {
-        if(c.gameObject.tag == "Player")
+
+        if (c.gameObject.tag == "Player" && SceneManager.GetActiveScene().buildIndex != 6)
         {
-            lightON = true;  
+            Debug.Log("You did !");
+            lightON = true;
+        }
+        else if (c.gameObject.tag == "Player" && Light.gameObject.GetComponent<c_LightBehaviour>().hasTeddy == true)
+        {
+            lightON = true;
         }
     }
 }

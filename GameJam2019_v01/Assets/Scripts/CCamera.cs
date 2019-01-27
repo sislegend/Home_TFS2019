@@ -15,12 +15,14 @@ public class CCamera : MonoBehaviour {
 
     bool IsHit = false;
 
+    Vector3 WallPos;
+
 
     // Use this for initialization
     void Start()
     {
-        transform.Rotate(Vector3.up, 45);
-        OffSet = new Vector3(0, 4, -4);
+        //transform.Rotate(Vector3.up, 180);
+        OffSet = new Vector3(0, 9.8f, 0);
     }
 
     // Update is called once per frame
@@ -36,8 +38,7 @@ public class CCamera : MonoBehaviour {
 
         transform.LookAt(ThePlayer);
 
-
-        if (IsHit) { Test();  }
+        if (IsHit) { Offset();  } else { OffSet = new Vector3(0, 5, -7); }
 
         //Edited by Daniel O.
 
@@ -81,26 +82,35 @@ public class CCamera : MonoBehaviour {
 
     private void OnTriggerEnter(Collider c)
     {
-        //Debug.Log(c.gameObject.tag);
-
         if (c.gameObject.tag == "AWall")
         {
+            WallPos = c.gameObject.transform.position;
             IsHit = true;
-            //OffSet = new Vector3(0, 8, -4);
-            //transform.Rotate(Vector3.right, 20);
-            //smoothSpeed = 0.05f;
-        }
+        } 
     }
 
     private void OnTriggerExit(Collider c)
     {
-        //OffSet = new Vector3(0, 4, -4);
         IsHit = false;
     }
 
 
-    void Test()
+    void Offset()
     {
-        Debug.Log("Here @");
+        if (OffSet.y != 10) { OffSet = new Vector3(0, 10, -12); }
+        transform.Rotate(Vector3.right, 20);
+        smoothSpeed = 0.05f;
+
+        float Dist = (WallPos - transform.position).magnitude;
+        if(Dist < 0) { Dist = -Dist; }
+
+        if (OffSet.y == 10)
+        {
+            Debug.Log(Dist);
+            if (Dist > 13)
+            {
+                OffSet.z += .5f;
+            }
+        }
     }
 }
