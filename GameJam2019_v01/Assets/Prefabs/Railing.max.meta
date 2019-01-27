@@ -1,20 +1,21 @@
 fileFormatVersion: 2
-guid: c4e399e1fc6c0104294df9e754665c36
+guid: b48a5e5c34e2a9e4cb9ad62b134060a8
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Box001
-    100004: Sphere001
+    100002: Railing
+    100004: Railing 2
     400000: //RootNode
-    400002: Box001
-    400004: Sphere001
-    2100000: No Name
-    2300000: //RootNode
-    2300002: Box001
-    3300000: //RootNode
-    3300002: Box001
-    4300000: Box001
+    400002: Railing
+    400004: Railing 2
+    2100000: 01 - Default
+    2300000: Railing
+    2300002: Railing 2
+    3300000: Railing
+    3300002: Railing 2
+    4300000: Railing
+    4300002: Railing 2
   externalObjects: {}
   materials:
     importMaterials: 1
