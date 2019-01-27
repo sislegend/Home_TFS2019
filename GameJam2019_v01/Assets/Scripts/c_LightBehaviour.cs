@@ -68,7 +68,7 @@ public class c_LightBehaviour : MonoBehaviour {
     {
         if (c.gameObject.tag == "Actual Shadow")
         {
-            GameObject.FindGameObjectWithTag("Actual Shadow").transform.localScale += new Vector3(.5f, 0, l_Radius * Time.deltaTime);
+            //GameObject.FindGameObjectWithTag("Actual Shadow").transform.localScale += new Vector3(.5f, 0, l_Radius * Time.deltaTime);
             radiusDecreasing = false;
         }
     }
