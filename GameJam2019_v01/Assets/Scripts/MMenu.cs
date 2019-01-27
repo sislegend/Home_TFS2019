@@ -10,21 +10,24 @@ using UnityEngine.SceneManagement;
 public class MMenu : MonoBehaviour
 {
     float angle;
+    //public int nextScene;
+
 
 
     //private int m_SceneSelection;
 
     private void Start()
     {
+        Debug.Log("shraw");
         //m_SceneSelection = 0;
     }
 
-    public void ChangeToNextScene()
+    public void GameStart()
     {
         // Input Fade + Sound
         //m_SceneSelection += 1;
 
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
         //gameObject.GetComponent<c_LightBehaviour>().tryAgain.SetActive(false);
     }
 

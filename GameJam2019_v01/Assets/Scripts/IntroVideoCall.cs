@@ -7,45 +7,31 @@ using UnityEngine;
 public class IntroVideoCall : MonoBehaviour
 {
     
-    public int _videoLength;
+    public int n_videoLength;
+    public int n_NextScene;
 
-    private float _videoPlayedTime;
-    private bool _endVideo;
+    private float n_videoPlayedTime;
+    private bool n_endVideo;
 
 	// Use this for initialization
 	void Start ()
     {
-        _videoPlayedTime = 0;
-        _endVideo = false;
-        //will attach the video player to the main cam
-        //GameObject camera = GameObject.Find("Main Camera");
-
-        //videoplayer targets cam when it is added
-        //var videoPlayer = camera.AddComponent<UnityEngine.Video.VideoPlayer>();
-
-        //play on awake defaults to true set to false
-        //videoPlayer.playOnAwake = false;
-
-        //by default video player add to a far plane setting it to near plane
-        //videoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
-
-        //this can adjust if you can see the scene behind the video being played
-        //videoPlayer.targetCameraAlpha = 0.5f;
-
+        n_videoPlayedTime = 0;
+        n_endVideo = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        _videoPlayedTime += Time.deltaTime;
-        if (_videoPlayedTime > _videoLength)
+        n_videoPlayedTime += Time.deltaTime;
+        if (n_videoPlayedTime > n_videoLength)
         {
-            _endVideo = true;
+            n_endVideo = true;
         }
 
-        if (_endVideo)
+        if (n_endVideo)
         {
-            SceneManager.LoadScene(2, LoadSceneMode.Single);
+            SceneManager.LoadScene(n_NextScene, LoadSceneMode.Single);
         }
     }
 }
