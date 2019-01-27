@@ -113,11 +113,11 @@ public class c_StaticLightBehaviour : MonoBehaviour {
 
         if (c.gameObject.tag == "Player" && SceneManager.GetActiveScene().buildIndex != 6)
         {
+            Debug.Log("You did !");
             lightON = true;
         }
         else if (c.gameObject.tag == "Player" && Light.gameObject.GetComponent<c_LightBehaviour>().hasTeddy == true)
         {
-            
             lightON = true;
         }
     }
