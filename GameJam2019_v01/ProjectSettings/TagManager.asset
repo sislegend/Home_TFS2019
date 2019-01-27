@@ -8,6 +8,7 @@ TagManager:
   - flicker
   - Candle
   - Actual Shadow
+  - AWall
   layers:
   - Default
   - TransparentFX

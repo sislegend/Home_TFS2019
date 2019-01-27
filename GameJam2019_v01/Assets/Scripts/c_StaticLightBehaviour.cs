@@ -11,6 +11,7 @@ public class c_StaticLightBehaviour : MonoBehaviour {
     public GameObject pulse;
     public GameObject pulse2;
     public GameObject[] lightSources;
+    public GameObject[] shadows;
     public bool levelEnd;
 
     void Start()
@@ -20,6 +21,12 @@ public class c_StaticLightBehaviour : MonoBehaviour {
         p_Candle.range = 50;
         p_Candle.intensity = 0;
         levelEnd = false;
+        if(shadows[2])
+        {
+            shadows[2].SetActive(false);
+            shadows[3].SetActive(false);
+        }
+
     }
 
     void Update()
@@ -49,6 +56,29 @@ public class c_StaticLightBehaviour : MonoBehaviour {
                 GameObject.FindGameObjectWithTag("Actual Shadow").SetActive(false);
                 levelEnd = true;
             }
+        }
+        else if(lightSources.Length == 4)
+        {            
+            if (lightSources[0].GetComponent<c_StaticLightBehaviour>().lightON == true)
+            {
+                shadows[0].SetActive(false);
+            }
+            if (lightSources[1].GetComponent<c_StaticLightBehaviour>().lightON == true)
+            {
+                //shadows[1].SetActive(false);
+                shadows[2].SetActive(true);
+                shadows[3].SetActive(true);
+            }
+            if (lightSources[1].GetComponent<c_StaticLightBehaviour>().lightON == true && lightSources[0].GetComponent<c_StaticLightBehaviour>().lightON == true)
+            {
+                shadows[1].SetActive(false);
+            }
+            if(lightSources[1].GetComponent<c_StaticLightBehaviour>().lightON == true && lightSources[2].GetComponent<c_StaticLightBehaviour>().lightON == true)
+            {
+                shadows[2].SetActive(false);
+                levelEnd = true;
+            }
+
         }
         
         if (time >= 15)

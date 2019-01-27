@@ -1,17 +1,15 @@
 fileFormatVersion: 2
-guid: 50c840c950f74ab42992a2d73a4d3666
+guid: 6b395a3b47b7fe54db5eecddd2f1b128
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Vase3
     400000: //RootNode
-    400002: Vase3
-    2100000: No Name
-    2100002: 01 - Default
-    2300000: Vase3
-    3300000: Vase3
-    4300000: Vase3
+    2100000: 19 - Default
+    2100002: 02 - Default
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Barrel
   externalObjects: {}
   materials:
     importMaterials: 1
