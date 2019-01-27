@@ -1,20 +1,61 @@
 fileFormatVersion: 2
-guid: b2d2ec2cebad4694ebec18e2caf79a4f
+guid: 43daa2bd87ef99b4782e3b49ccb09f06
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: AlarmClock
+    100002: book1
+    100004: book2
+    100006: Book3
+    100008: Candle
+    100010: //RootNode
+    100012: Glass
+    100014: Lamp
+    100016: Mirror
+    100018: RockingHorse
+    100020: WashBowl
+    400000: AlarmClock
+    400002: book1
+    400004: book2
+    400006: Book3
+    400008: Candle
+    400010: //RootNode
+    400012: Glass
+    400014: Lamp
+    400016: Mirror
+    400018: RockingHorse
+    400020: WashBowl
     2100000: No Name
-    2100002: 'Material #35'
-    2100004: 'Material #37'
-    2100006: 'Material #38'
-    2100008: 'Material #36'
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Bed
-    4300002: Bedpost
-    9500000: //RootNode
+    2300000: AlarmClock
+    2300002: book1
+    2300004: book2
+    2300006: Book3
+    2300008: Candle
+    2300010: Glass
+    2300012: Lamp
+    2300014: Mirror
+    2300016: RockingHorse
+    2300018: WashBowl
+    3300000: AlarmClock
+    3300002: book1
+    3300004: book2
+    3300006: Book3
+    3300008: Candle
+    3300010: Glass
+    3300012: Lamp
+    3300014: Mirror
+    3300016: RockingHorse
+    3300018: WashBowl
+    4300000: Glass
+    4300002: AlarmClock
+    4300004: Lamp
+    4300006: WashBowl
+    4300008: book2
+    4300010: book1
+    4300012: Book3
+    4300014: Mirror
+    4300016: RockingHorse
+    4300018: Candle
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -90,7 +131,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

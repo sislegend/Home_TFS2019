@@ -1,20 +1,14 @@
 fileFormatVersion: 2
-guid: b2d2ec2cebad4694ebec18e2caf79a4f
+guid: 3d1422d51393c384b878b50430d862af
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: No Name
-    2100002: 'Material #35'
-    2100004: 'Material #37'
-    2100006: 'Material #38'
-    2100008: 'Material #36'
+    2100000: 01 - Default
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Bed
-    4300002: Bedpost
-    9500000: //RootNode
+    4300000: Railing 2
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -90,7 +84,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
