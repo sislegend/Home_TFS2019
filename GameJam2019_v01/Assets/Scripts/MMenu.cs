@@ -12,20 +12,20 @@ public class MMenu : MonoBehaviour
     float angle;
 
 
-    private int m_SceneSelection;
+    //private int m_SceneSelection;
 
     private void Start()
     {
-        m_SceneSelection = 0;
+        //m_SceneSelection = 0;
     }
 
     public void ChangeToNextScene()
     {
         // Input Fade + Sound
-        m_SceneSelection += 1;
+        //m_SceneSelection += 1;
 
-        SceneManager.LoadScene(m_SceneSelection, LoadSceneMode.Single);
-        gameObject.GetComponent<c_LightBehaviour>().tryAgain.SetActive(false);
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        //gameObject.GetComponent<c_LightBehaviour>().tryAgain.SetActive(false);
     }
 
     public void ResetScene()
