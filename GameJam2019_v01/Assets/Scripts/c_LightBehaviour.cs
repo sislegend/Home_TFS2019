@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
+
 public class c_LightBehaviour : MonoBehaviour {
     
     public float l_Radius;
@@ -72,6 +74,7 @@ public class c_LightBehaviour : MonoBehaviour {
 
         if (c.gameObject.tag == "Teddy")
         {
+            Debug.Log(SceneManager.GetActiveScene().buildIndex);
             hasTeddy = true;
             l_RadiusMax *= 2;
             c.gameObject.SetActive(false);

@@ -21,8 +21,8 @@ public class CCamera : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        transform.Rotate(Vector3.up, 45);
-        OffSet = new Vector3(0, 4, -4);
+        //transform.Rotate(Vector3.up, 180);
+        OffSet = new Vector3(0, 9.8f, 0);
     }
 
     // Update is called once per frame
@@ -38,7 +38,7 @@ public class CCamera : MonoBehaviour {
 
         transform.LookAt(ThePlayer);
 
-        if (IsHit) { Offset();  } else { OffSet = new Vector3(0, 4, -4); }
+        if (IsHit) { Offset();  } else { OffSet = new Vector3(0, 5, -7); }
 
         //Edited by Daniel O.
 
@@ -97,7 +97,7 @@ public class CCamera : MonoBehaviour {
 
     void Offset()
     {
-        if (OffSet.y != 10) { OffSet = new Vector3(0, 10, -5); }
+        if (OffSet.y != 10) { OffSet = new Vector3(0, 10, -12); }
         transform.Rotate(Vector3.right, 20);
         smoothSpeed = 0.05f;
 
@@ -107,10 +107,9 @@ public class CCamera : MonoBehaviour {
         if (OffSet.y == 10)
         {
             Debug.Log(Dist);
-            if (Dist > 14)
+            if (Dist > 13)
             {
-                Debug.Log(OffSet.z);
-                OffSet.z += .1f;
+                OffSet.z += .5f;
             }
         }
     }
