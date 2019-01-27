@@ -30,8 +30,10 @@ public class SpawnScript : MonoBehaviour
         {
             if (shadowNum == 0)
             {
-               SpawnShadow();
-               //gameObject.GetComponent<Animator>().Play("rockingHorse");
+                SpawnShadow();
+                //shadowNum++;
+
+                //gameObject.GetComponent<Animator>().Play("rockingHorse");
             }
         }
     }
@@ -48,7 +50,6 @@ public class SpawnScript : MonoBehaviour
         shadow.SetActive(true);
         shadow.transform.localScale = new Vector3(2 * GameObject.FindGameObjectWithTag("Shadow").transform.localScale.y, 1, 4 * GameObject.FindGameObjectWithTag("Shadow").transform.localScale.y);
         Instantiate(shadow, spawnPoint.transform.position, Quaternion.identity);
-        shadow.transform.rotation = spawnPoint.transform.rotation;
         shadowNum++;
     }
 }
