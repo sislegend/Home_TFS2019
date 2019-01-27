@@ -3473,6 +3473,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 2.1, z: 10.58}
   m_Center: {x: -7.4, y: 0, z: 0}
+--- !u!1 &1979549132 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: c4e399e1fc6c0104294df9e754665c36, type: 3}
+  m_PrefabInternal: {fileID: 1270082720}
+--- !u!114 &1979549133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1979549132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c21b6ba9a0ea0449a47bfb5fcc0bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1979549134
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1979549132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.040939, y: 1.7379419, z: 26.02637}
+  m_Center: {x: 2.2707806, y: 0.86896855, z: 0}
 --- !u!1 &1982818048 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1933781605104266, guid: 7d1b1323e7b9c4a48b68351d583c3381,
@@ -3561,7 +3588,7 @@ GameObject:
   - component: {fileID: 2059940447}
   - component: {fileID: 2059940446}
   - component: {fileID: 2059940445}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
