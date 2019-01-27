@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-    public enum GameState { play, pause, end }
+    public enum GameState { play, pause, end, win }
     public GameState CurrentGState = GameState.play;
 
     //public CMovement ThePlayer;
@@ -56,6 +56,10 @@ public class GameManager : MonoBehaviour {
             case GameState.end:
                 End();
                 break;
+
+            case GameState.win:
+                Win();
+                break;
         }
 
     }
@@ -77,6 +81,11 @@ public class GameManager : MonoBehaviour {
     }
 
     void End()
+    {
+        Time.timeScale = 0;
+    }
+
+    void Win()
     {
         Time.timeScale = 0;
     }
