@@ -12,7 +12,8 @@ public class CCamera : MonoBehaviour {
     public Transform ThePlayer;
     public Vector3 OffSet;
     public float smoothSpeed = 0.125f;
-    public int room = 1;
+
+    bool IsHit = false;
 
 
     // Use this for initialization
@@ -35,25 +36,29 @@ public class CCamera : MonoBehaviour {
 
         transform.LookAt(ThePlayer);
 
+
+        if (IsHit) { Test();  }
+
         //Edited by Daniel O.
 
-        RaycastHit WallHit = new RaycastHit();
+        //RaycastHit WallHit = new RaycastHit();
 
-        if (Physics.Raycast(ThePlayer.transform.position, -(ThePlayer.transform.forward), out WallHit, 2.0f))
-        {
-            if (WallHit.transform.gameObject.tag == "Wall")
-            {
-                OffSet = new Vector3(0, 8, -4);
-                transform.Rotate(Vector3.right, 20);
-                smoothSpeed = 0.05f;
-            }
-            else
-            {
-                OffSet = new Vector3(0, 4, -4);
-            }
+        //if (Physics.Raycast(ThePlayer.transform.position, -(ThePlayer.transform.forward), out WallHit, 2.0f))
+        //{
+        //    Debug.Log(WallHit.transform.gameObject.tag);
+        //    if (WallHit.transform.gameObject.tag == "Wall" && WallHit.transform.gameObject.tag != null)
+        //    {
+        //        OffSet = new Vector3(0, 8, -4);
+        //        transform.Rotate(Vector3.right, 20);
+        //        smoothSpeed = 0.05f;
+        //    }
+        //    else
+        //    {
+        //        OffSet = new Vector3(0, 4, -4);
+        //    }
 
-            Debug.DrawLine(ThePlayer.transform.position, WallHit.transform.position);
-        }
+        //    Debug.DrawLine(ThePlayer.transform.position, WallHit.transform.position);
+        //}
 
 
 
@@ -73,15 +78,29 @@ public class CCamera : MonoBehaviour {
         //}
     }
 
-    //private void OnTriggerEnter(Collider c)
-    //{
-    //    OffSet = new Vector3(0, 8, -4);
-    //    transform.Rotate(Vector3.right, 20);
-    //    smoothSpeed = 0.05f;
-    //}
 
-    //private void OnTriggerExit(Collider c)
-    //{
-    //    OffSet = new Vector3(0, 4, -4);
-    //}
+    private void OnTriggerEnter(Collider c)
+    {
+        //Debug.Log(c.gameObject.tag);
+
+        if (c.gameObject.tag == "AWall")
+        {
+            IsHit = true;
+            //OffSet = new Vector3(0, 8, -4);
+            //transform.Rotate(Vector3.right, 20);
+            //smoothSpeed = 0.05f;
+        }
+    }
+
+    private void OnTriggerExit(Collider c)
+    {
+        //OffSet = new Vector3(0, 4, -4);
+        IsHit = false;
+    }
+
+
+    void Test()
+    {
+        Debug.Log("Here @");
+    }
 }

@@ -11,6 +11,7 @@ public class c_StaticLightBehaviour : MonoBehaviour {
     public GameObject pulse;
     public GameObject pulse2;
     public GameObject[] lightSources;
+    public bool levelEnd;
 
     void Start()
     {
@@ -18,7 +19,7 @@ public class c_StaticLightBehaviour : MonoBehaviour {
         l_Radius = p_Candle.range;
         p_Candle.range = 50;
         p_Candle.intensity = 0;
-        
+        levelEnd = false;
     }
 
     void Update()
@@ -38,6 +39,7 @@ public class c_StaticLightBehaviour : MonoBehaviour {
             {
                 
                 GameObject.FindGameObjectWithTag("Actual Shadow").SetActive(false);
+                levelEnd = true;
             }
         } 
         else if (lightSources.Length == 2)
@@ -45,6 +47,7 @@ public class c_StaticLightBehaviour : MonoBehaviour {
             if (lightSources[0].GetComponent<c_StaticLightBehaviour>().lightON == true && lightSources[1].GetComponent<c_StaticLightBehaviour>().lightON == true)
             {
                 GameObject.FindGameObjectWithTag("Actual Shadow").SetActive(false);
+                levelEnd = true;
             }
         }
         
