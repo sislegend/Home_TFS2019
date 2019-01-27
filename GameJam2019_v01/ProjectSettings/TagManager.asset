@@ -8,6 +8,8 @@ TagManager:
   - flicker
   - Candle
   - Actual Shadow
+  - AWall
+  - Teddy
   layers:
   - Default
   - TransparentFX
