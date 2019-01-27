@@ -1577,6 +1577,21 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114508857272193198, guid: 579c2e0f5649b124687c2d73e6286781,
+        type: 2}
+      propertyPath: m_selectedFaces.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114508857272193198, guid: 579c2e0f5649b124687c2d73e6286781,
+        type: 2}
+      propertyPath: m_SelectedEdges.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114508857272193198, guid: 579c2e0f5649b124687c2d73e6286781,
+        type: 2}
+      propertyPath: m_selectedTriangles.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4424247443713768, guid: 579c2e0f5649b124687c2d73e6286781, type: 2}
       propertyPath: m_LocalPosition.x
       value: -24.861195
@@ -1853,6 +1868,51 @@ Prefab:
     - target: {fileID: 1696697801553118, guid: 579c2e0f5649b124687c2d73e6286781, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114508857272193198, guid: 579c2e0f5649b124687c2d73e6286781,
+        type: 2}
+      propertyPath: m_SelectedEdges.Array.data[0].y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114508857272193198, guid: 579c2e0f5649b124687c2d73e6286781,
+        type: 2}
+      propertyPath: m_SelectedEdges.Array.data[1].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114508857272193198, guid: 579c2e0f5649b124687c2d73e6286781,
+        type: 2}
+      propertyPath: m_SelectedEdges.Array.data[1].y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114508857272193198, guid: 579c2e0f5649b124687c2d73e6286781,
+        type: 2}
+      propertyPath: m_SelectedEdges.Array.data[2].x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114508857272193198, guid: 579c2e0f5649b124687c2d73e6286781,
+        type: 2}
+      propertyPath: m_SelectedEdges.Array.data[2].y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114508857272193198, guid: 579c2e0f5649b124687c2d73e6286781,
+        type: 2}
+      propertyPath: m_SelectedEdges.Array.data[3].x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114508857272193198, guid: 579c2e0f5649b124687c2d73e6286781,
+        type: 2}
+      propertyPath: m_selectedTriangles.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114508857272193198, guid: 579c2e0f5649b124687c2d73e6286781,
+        type: 2}
+      propertyPath: m_selectedTriangles.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114508857272193198, guid: 579c2e0f5649b124687c2d73e6286781,
+        type: 2}
+      propertyPath: m_selectedTriangles.Array.data[3]
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 579c2e0f5649b124687c2d73e6286781, type: 2}
