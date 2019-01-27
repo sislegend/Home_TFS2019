@@ -4816,7 +4816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   n_canMoveForward: {fileID: 1394975841}
-  n_nextLevel: 6
+  n_nextLevel: 5
 --- !u!1 &1860465909 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1114827408371542, guid: 9fc67bf1583f4f340beed6c4a3bf639c,

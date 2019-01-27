@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   n_canMoveForward: {fileID: 500189466}
-  n_nextLevel: 5
+  n_nextLevel: 4
 --- !u!54 &333283351
 Rigidbody:
   m_ObjectHideFlags: 0

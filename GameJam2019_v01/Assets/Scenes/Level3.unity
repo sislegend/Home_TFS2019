@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   n_canMoveForward: {fileID: 419321574}
-  n_nextLevel: 7
+  n_nextLevel: 6
 --- !u!65 &119532078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1613,7 +1613,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c4e399e1fc6c0104294df9e754665c36, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.2161
+      value: -0.21659
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c4e399e1fc6c0104294df9e754665c36, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1645,7 +1645,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c4e399e1fc6c0104294df9e754665c36, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0045376024
+      value: 0.005453733
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: c4e399e1fc6c0104294df9e754665c36, type: 3}
       propertyPath: m_Materials.Array.data[0]
