@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnScript : MonoBehaviour
-{
+public class SpawnScriptVase : MonoBehaviour {
 
     public Transform spawnPoint;
     public GameObject shadow;
@@ -30,8 +29,8 @@ public class SpawnScript : MonoBehaviour
         {
             if (shadowNum == 0)
             {
-               SpawnShadow();
-               //gameObject.GetComponent<Animator>().Play("rockingHorse");
+                SpawnShadow();
+                //gameObject.GetComponent<Animator>().Play("rockingHorse");
             }
         }
     }
@@ -46,9 +45,9 @@ public class SpawnScript : MonoBehaviour
     public void SpawnShadow()
     {
         shadow.SetActive(true);
-        shadow.transform.localScale = new Vector3(2 * GameObject.FindGameObjectWithTag("Shadow").transform.localScale.y, 1, 4 * GameObject.FindGameObjectWithTag("Shadow").transform.localScale.y);
-        Instantiate(shadow, spawnPoint.transform.position, Quaternion.identity);
-        shadow.transform.rotation = spawnPoint.transform.rotation;
+        //shadow.transform.localScale = new Vector3(2 * GameObject.FindGameObjectWithTag("Shadow").transform.localScale.y, 1, 4 * GameObject.FindGameObjectWithTag("Shadow").transform.localScale.y);
+        //Instantiate(shadow, spawnPoint.transform.position, Quaternion.identity);
+        //shadow.transform.rotation = spawnPoint.transform.rotation;
         shadowNum++;
     }
 }
