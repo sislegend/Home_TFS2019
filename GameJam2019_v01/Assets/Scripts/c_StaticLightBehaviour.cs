@@ -93,6 +93,10 @@ public class c_StaticLightBehaviour : MonoBehaviour {
                 shadows[2].SetActive(false);
                 levelEnd = true;
             }
+            if(lightSources[2].GetComponent<c_StaticLightBehaviour>().lightON == true)
+            {
+                shadows[3].SetActive(false);
+            }
 
         }
         

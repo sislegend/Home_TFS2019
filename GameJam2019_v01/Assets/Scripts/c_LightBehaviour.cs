@@ -58,6 +58,7 @@ public class c_LightBehaviour : MonoBehaviour {
         {
             p_Candle.intensity = 0;
             GameObject.FindGameObjectWithTag("flicker").SetActive(false);
+            //GameManager.CurrentGState = GameManager.GameState.end;
         }
     }
     
