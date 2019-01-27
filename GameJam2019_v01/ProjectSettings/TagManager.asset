@@ -9,6 +9,7 @@ TagManager:
   - Candle
   - Actual Shadow
   - AWall
+  - Teddy
   layers:
   - Default
   - TransparentFX
