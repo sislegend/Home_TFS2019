@@ -15,11 +15,8 @@ public class c_LightBehaviour : MonoBehaviour {
     public bool hasTeddy;
     Light p_Candle;
     public GameObject[] shadow;
-    public RaycastHit shadowRay;
+
     public GameObject tryAgain;
-    public float p_Lives = 3;
-    
-    public int timesCoroutineCalled;
 
     void Start()
     {
@@ -38,12 +35,12 @@ public class c_LightBehaviour : MonoBehaviour {
                 
         if (radiusDecreasing && hasTeddy == false)
         {
-            l_Radius -= 3.5f * Time.deltaTime;
+            l_Radius -= 3.8f * Time.deltaTime;
         }
 
         if (radiusSlow && l_Radius >= 0.2 && hasTeddy == false)
         {
-            l_Radius -= 1.5f * Time.deltaTime;
+            l_Radius -= 2.5f * Time.deltaTime;
         }
         
         if (!radiusDecreasing && !radiusSlow)
@@ -57,7 +54,7 @@ public class c_LightBehaviour : MonoBehaviour {
         if(l_Radius <= 0)
         {
             p_Candle.intensity = 0;
-            GameObject.FindGameObjectWithTag("flicker").SetActive(false);
+            //GameObject.FindGameObjectWithTag("flicker").SetActive(false);
             //GameManager.CurrentGState = GameManager.GameState.end;
         }
     }
@@ -90,7 +87,6 @@ public class c_LightBehaviour : MonoBehaviour {
         }
         else if (c.gameObject.tag == "Actual Shadow" && c.gameObject.name != "Final Shadow")
         {
-            //GameObject.FindGameObjectWithTag("Actual Shadow").transform.localScale += new Vector3(.5f, 0, l_Radius * Time.deltaTime);
             radiusDecreasing = false;
         }
     }

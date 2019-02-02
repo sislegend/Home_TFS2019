@@ -73,31 +73,37 @@ public class c_StaticLightBehaviour : MonoBehaviour {
             }
         }
         else if(lightSources.Length == 4)
-        {            
-            if (lightSources[0].GetComponent<c_StaticLightBehaviour>().lightON == true)
+        {
+            try
             {
-                shadows[0].SetActive(false);
+                if (lightSources[0].GetComponent<c_StaticLightBehaviour>().lightON == true)
+                {
+                    shadows[0].SetActive(false);
+                }
+                if (lightSources[1].GetComponent<c_StaticLightBehaviour>().lightON == true)
+                {
+                    //shadows[1].SetActive(false);
+                    shadows[2].SetActive(true);
+                    shadows[3].SetActive(true);
+                }
+                if (lightSources[1].GetComponent<c_StaticLightBehaviour>().lightON == true && lightSources[0].GetComponent<c_StaticLightBehaviour>().lightON == true)
+                {
+                    shadows[1].SetActive(false);
+                }
+                if (lightSources[1].GetComponent<c_StaticLightBehaviour>().lightON == true && lightSources[2].GetComponent<c_StaticLightBehaviour>().lightON == true)
+                {
+                    shadows[2].SetActive(false);
+                    levelEnd = true;
+                }
+                if (lightSources[2].GetComponent<c_StaticLightBehaviour>().lightON == true)
+                {
+                    shadows[3].SetActive(false);
+                }
             }
-            if (lightSources[1].GetComponent<c_StaticLightBehaviour>().lightON == true)
+            catch
             {
-                //shadows[1].SetActive(false);
-                shadows[2].SetActive(true);
-                shadows[3].SetActive(true);
+                Debug.Log("ERROR IN THIS BLOCK");
             }
-            if (lightSources[1].GetComponent<c_StaticLightBehaviour>().lightON == true && lightSources[0].GetComponent<c_StaticLightBehaviour>().lightON == true)
-            {
-                shadows[1].SetActive(false);
-            }
-            if(lightSources[1].GetComponent<c_StaticLightBehaviour>().lightON == true && lightSources[2].GetComponent<c_StaticLightBehaviour>().lightON == true)
-            {
-                shadows[2].SetActive(false);
-                levelEnd = true;
-            }
-            if(lightSources[2].GetComponent<c_StaticLightBehaviour>().lightON == true)
-            {
-                shadows[3].SetActive(false);
-            }
-
         }
         
         if (time >= 15)
